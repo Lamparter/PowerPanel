@@ -1,5 +1,5 @@
 # Desktop Management
-**The next Computer management**
+**The next [Computer Management](file:///C:/Windows/System32/deskngr.msc)**
 
 ![Desktop Management icon](img/Desktop.ico)
 
