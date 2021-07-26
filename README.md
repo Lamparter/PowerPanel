@@ -1,5 +1,5 @@
 # Desktop Management
-**The Best Computer management console yet.**
+**The next Computer management**
 
 ![Desktop Management icon](img/Desktop.ico)
 
