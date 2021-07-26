@@ -1,5 +1,5 @@
 # Desktop Management
-**The next [Computer Management]**
+**The next Computer Management**
 
 ![Desktop Management icon](img/Desktop.ico)
 
