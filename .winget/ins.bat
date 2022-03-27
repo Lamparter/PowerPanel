@@ -4,7 +4,8 @@ echo If Windows shows you a prompt for admin, or related, accept it.
 bitsadmin.exe /transfer "DesktopManagement" https://raw.githubusercontent.com/deskmgr/app/main/.winget/pkg/deskmgr.msc C:\Windows\System32\deskmgr.msc
 cd %appdata%
 mkdir Shortcut
-bitsadmin.exe /transfer "DesktopManagement" https://raw.githubusercontent.com/deskmgr/app/main/assets/shortcut.exe "%appdata%\Shortcut\shortcut.exe"
+bitsadmin.exe /transfer "DesktopManagement" https://raw.githubusercontent.com/deskmgr/app/main/assets/Shortcut.exe "%appdata%\Shortcut\shortcut.exe"
+cd %appdata%\Shortcut\
 shortcut.exe /f:"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Desktop Management.lnk" /a:c /t:"%windir%\System32\deskmgr.msc" /i:%windir%\System32\imageres.dll,105
 cd C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\
 del "Computer Management.lnk"
