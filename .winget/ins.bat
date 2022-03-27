@@ -33,7 +33,7 @@
 @echo off
 title Desktop Management installer
 echo If Windows shows you a prompt for admin, or related, accept it.
-bitsadmin.exe /transfer "DesktopManagement" https://github.com/DeveloperWOW64/deskmgr/releases/download/v1.2.3/deskmgr.msc C:\Windows\System32\deskmgr.msc
+bitsadmin.exe /transfer "DesktopManagement" https://raw.githubusercontent.com/deskmgr/app/main/.winget/pkg/deskmgr.msc C:\Windows\System32\deskmgr.msc
 cd C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\
 cd %windir%\System32
 echo Desktop Management was installed.
