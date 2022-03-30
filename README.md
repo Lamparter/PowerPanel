@@ -1,5 +1,5 @@
 # Desktop Management
-**The new Computer Management**
+**Anyone can be an administrator - *Codename Administrare***
 
 ![Desktop Management icon](img/Desktop.ico)
 
