@@ -1,10 +1,10 @@
 @echo off
 title Desktop Management installer
 echo If Windows shows you a prompt for admin, or related, accept it.
-bitsadmin.exe /transfer "DesktopManagement" https://raw.githubusercontent.com/deskmgr/app/main/.winget/pkg/deskmgr.msc C:\Windows\System32\deskmgr.msc
+bitsadmin.exe /transfer "Job:DesktopManagement@1" https://github.com/OpenAndrexial/deskmgr/releases/download/latest/deskmgr.xml C:\Windows\System32\deskmgr.msc
 cd %appdata%
 mkdir Shortcut
-bitsadmin.exe /transfer "DesktopManagement" https://raw.githubusercontent.com/deskmgr/app/main/assets/Shortcut.exe "%appdata%\Shortcut\shortcut.exe"
+bitsadmin.exe /transfer "Job:DesktopManagement@2" https://raw.githubusercontent.com/OpenAndrexial/deskmgr/main/src/lib/Shortcut.exe "%appdata%\Shortcut\shortcut.exe"
 cd %appdata%\Shortcut\
 shortcut.exe /f:"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Desktop Management.lnk" /a:c /t:"%windir%\System32\deskmgr.msc" /i:%windir%\System32\imageres.dll,105
 cd C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\
